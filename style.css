@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+.container {
+  display: grid;
+  grid-template-rows: 1fr 500px 550px 600px;
+}
+.navbar {
+  /* border: 1px solid red; */
+  background-color: #dfe6e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.nav {
+  margin-right: 50px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.nav ul li {
+  padding: 10px 25px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: orangered;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.6s;
+  font-family: "Yeon Sung", cursive;
+}
+.nav ul li a:hover {
+  background-color: orangered;
+  color: white;
+}
+.logo {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.logo i {
+  padding: 10px 20px;
+  /* overflow: hidden; */
+  font-size: 30px;
+  background-color: orangered;
+  color: white;
+}
+.logo span {
+  padding: 10px 20px;
+  font-size: 30px;
+  color: orangered;
+  font-family: "Yeon Sung", cursive;
+}
+.bg::before {
+  border: 1px solid red;
+  /* background-color: black; */
+  background: url(https://ca-times.brightspotcdn.com/dims4/default/dd4b1fb/2147483647/strip/true/crop/5893x3928+0+0/resize/1486x990!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F78%2F43%2F515f9bf84020a5dbc344c60e47a3%2F461204-la-fo-cooking-h4d-halloumi-and-shrimp-saganaki-lg-215.jpg)
+    no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 551px;
+  z-index: -1;
+  opacity: 0.2;
+}
+.bg h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.bg p {
+  /* border: 1px solid red; */
+  width: 800px;
+  text-align: center;
+  text-indent: 20px;
+  line-height: 25px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Search box in background */
+.searchbar {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  padding: 25px;
+  width: 500px;
+  /* max-width: 900px; */
+  display: inline-flex;
+}
+
+.searchbar--max-width {
+  /* max-width: 100%; */
+}
+
+.searchbar__input {
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid orangered;
+  /* border-radius: 5px 0 0 5px; */
+  background: #f4faf9;
+  transition: background 0.25s, box-shadow 0.25s;
+}
+
+.searchbar__input:focus {
+  background: white;
+  box-shadow: 0 0 2px rgb(223, 128, 94);
+}
+
+.searchbar__input::placeholder {
+  color: rgb(221, 172, 154);
+}
+
+.searchbar__button {
+  width: 40px;
+  background: orangered;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 0 5px 5px 0; */
+  cursor: pointer;
+  user-select: none;
+}
+
+.searchbar__button:active {
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+.welcome {
+  background-color: white;
+  /* height: 550px;
+  width: 100%; */
+}
+
+.welcome .heading {
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.welcome .meal {
+  display: flex;
+  margin-top: 50px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome .box i {
+  border: 1px solid #d1ccc0;
+  margin-left: 146px;
+  /* margin-right: 80px; */
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 40px;
+}
+.welcome .box p {
+  /* border: 1px solid red; */
+  margin-top: 25px;
+  margin-left: 80px;
+  color: black !important;
+  /* margin-right: 80px; */
+  text-align: center;
+  width: 262px;
+  letter-spacing: 1px;
+  text-indent: 16px;
+  line-height: 20px;
+  text-indent: 15px;
+}
+
+.box:nth-child(1) {
+  color: #485460;
+}
+.box:nth-child(2) {
+  color: #f6b93b;
+}
+.box:nth-child(3) {
+  color: #eb2f06;
+}
+.box:nth-child(4) {
+  color: #7efff5;
+}
+
+/* manu  */
+.manu {
+  background-color: #dfe4ea;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.item {
+  margin-top: 85px;
+  margin-left: 50px;
+}
+.item h3 {
+  margin-top: 10px;
+}
+.item p {
+  width: 220px;
+}
+.item button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-weight: bold;
+  background-color: orangered;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.6;
+}
+.item button:hover {
+  background-color: #eb2f06;
+  box-shadow: 5px 3px 8px #eb2f06;
+}
+.item img {
+  transition: 0.5s;
+}
+.item img:hover {
+  border-radius: 50%;
+}
